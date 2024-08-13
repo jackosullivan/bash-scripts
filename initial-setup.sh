@@ -27,5 +27,5 @@ apt upgrade -y
 apt autoremove -y
 apt clean -y
 
-# Reboot
-shutdown -r now
+# Pull down bash-scripts repo
+sudo -u glassportals sh -c "git clone https://github.com/jackosullivan/bash-scripts.git /home/glassportals/scripts"
