@@ -14,7 +14,7 @@ chown -R glassportals:glassportals /home/glassportals/.ssh
 
 # Configure and enable firewall
 ufw allow OpenSSH
-ufw enable
+ufw --force enable
 
 # Update ubuntu
 apt update
