@@ -28,4 +28,4 @@ apt autoremove -y
 apt clean -y
 
 # Reboot
-shutdown -r
+shutdown -r now
