@@ -9,7 +9,7 @@ usermod -aG sudo glassportals
 
 # Import pubkeys
 mkdir -p /home/glassportals/.ssh
-curl $PUBKEYS -o /home/glassportals/.ssh/authorized_keys
+curl -L $PUBKEYS -o /home/glassportals/.ssh/authorized_keys
 chown -R glassportals:glassportals /home/glassportals/.ssh
 
 # Configure and enable firewall
