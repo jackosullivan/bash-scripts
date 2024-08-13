@@ -12,6 +12,10 @@ mkdir -p /home/glassportals/.ssh
 curl -L $PUBKEYS -o /home/glassportals/.ssh/authorized_keys
 chown -R glassportals:glassportals /home/glassportals/.ssh
 
+# Disable SSH root login & disable SSH password authentication
+sed -i '/^PermitRootLogin[ \t]\+\w\+$/{ s//PermitRootLogin no/g; }' /etc/ssh/sshd_config
+echo "PasswordAuthentication no" >> /etc/ssh/sshd_config
+
 # Configure and enable firewall
 ufw allow OpenSSH
 ufw --force enable
@@ -21,3 +25,6 @@ apt update
 apt upgrade -y
 apt autoremove -y
 apt clean -y
+
+# Reboot
+shutdown -r
