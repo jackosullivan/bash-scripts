@@ -28,4 +28,4 @@ apt autoremove -y
 apt clean -y
 
 # Pull down bash-scripts repo
-sudo -u glassportals sh -c "git clone git@github.com:jackosullivan/bash-scripts.git /home/glassportals/scripts"
+sudo -u glassportals sh -c "git clone https://github.com/jackosullivan/bash-scripts.git /home/glassportals/scripts"
