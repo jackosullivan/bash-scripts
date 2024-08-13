@@ -6,6 +6,7 @@ PUBKEYS="https://gist.github.com/jackosullivan/fe8e65e71003b1ea0e1c1dc04a411b22/
 # Create sudo user
 useradd -m -d /home/glassportals -s /bin/bash glassportals
 usermod -aG sudo glassportals
+passwd -d glassportals
 
 # Import pubkeys
 mkdir -p /home/glassportals/.ssh
