@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Imports
-PUBKEYS="https://gist.github.com/jackosullivan/fe8e65e71003b1ea0e1c1dc04a411b22/raw/7ed12facce13640ff974646a6b83a1272a464461/authorized_keys"
+PUBKEYS="https://gist.githubusercontent.com/jackosullivan/fe8e65e71003b1ea0e1c1dc04a411b22/raw/a10c897668ee58b04f5c0e51cc811284eed5415d/authorized_keys"
 
 # Create sudo user
 useradd -m -d /home/glassportals -s /bin/bash glassportals
