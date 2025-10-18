@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Imports
-PUBKEYS="https://gist.githubusercontent.com/jackosullivan/fe8e65e71003b1ea0e1c1dc04a411b22/raw/a10c897668ee58b04f5c0e51cc811284eed5415d/authorized_keys"
+PUBKEYS="https://gist.githubusercontent.com/jackosullivan/fe8e65e71003b1ea0e1c1dc04a411b22/raw/34780ef25fe5bee435d7a68b46436e110c9bdb12/authorized_keys"
 USER="jackosullivan" # This is an example user, never use this.
 # Create sudo user
 useradd -m -d /home/$USER -s /bin/bash $USER
